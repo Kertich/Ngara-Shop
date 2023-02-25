@@ -10,6 +10,9 @@
     </label>
   
     <button type="submit" [disabled]="loginForm.invalid">Log in</button>
+    <p>No Account? <span>Create One</span></p> 
+
+
   
     <div *ngIf="loginForm?.get('email')?.invalid && loginForm?.get('email')?.touched">
       Email is required and must be a valid email address.
