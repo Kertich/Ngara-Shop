@@ -1,0 +1,28 @@
+footer {
+    background-color: rgba(51, 50, 50, 1);
+    padding: 1em;
+    color: white;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+  }
+  
+  .social-media {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .social-media-icons {
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+  }
+  
+  .social-media-icons .icon i{
+     font-size: 2em;
+  }
+  
