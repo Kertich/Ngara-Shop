@@ -1,0 +1,21 @@
+.container{
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:space-evenly ;
+}
+.productdesc{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+button{
+    background-color:rgb(69, 3, 122);
+    color: #fff;
+    border-radius: 5px;
+    height: 2rem;
+}
+
+
