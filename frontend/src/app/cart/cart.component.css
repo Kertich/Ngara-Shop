@@ -1,9 +1,18 @@
 main{
    padding-top: 5em;
-   padding-left: 15em;
-   padding-right: 15em;   
+   padding-left: 10em;
+   padding-right: 10em;   
+   padding-bottom: 10em; 
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(190, 243, 243);
+   gap: 20px;
 }
-
+.cart-section{
+  background-color:white;
+  width: 55vw;
+  padding: 30px;
+ }
 .image-details{
   display: flex;
   gap: 20px;
@@ -18,4 +27,51 @@ height: 150px;
    display: flex;
    justify-content: space-between;
    gap: 20px;
+}
+
+.remove-add{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.remove-add i{
+  font-size: 1.8rem;
+  color: goldenrod;
+}
+
+.remove-icon h2 i{
+   font-size: 1.3rem;
+ }
+
+.add-remove-cart{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+
+.checkout-section{
+  background-color: white;
+  width: 20vw;
+  height: 30vh;
+  padding: 30px;
+  /* padding-top: 50px; */
+}
+
+.title-total{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+   padding-bottom: 4em;
+ }
+
+ .checkout-section button{
+  background-color: goldenrod;
+  color: white;
+  font-weight: 900;
+  font-size: medium;
+  border: none;
+  padding: 10px;
+  width: 100%;
  }
