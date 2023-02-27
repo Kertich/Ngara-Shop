@@ -12,7 +12,7 @@
   }
   .section-1 {
     grid-area: section-1;
-    background-image: url("../../assets/Images/bigImage.png");
+    background-image: url("../../assets/images/bigImage.png");
     box-sizing: border-box;
     position: absolute;
     width: 580px;
@@ -68,7 +68,7 @@
   }
   
   .mens-section {
-    background-image: url("../../assets/Images/mensection.png");
+    background-image: url("../../assets/images/mensection.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -77,7 +77,7 @@
   }
   
   .womens-section {
-    background-image: url("../../assets/Images/womensection.png");
+    background-image: url("../../assets/images/womensection.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -93,7 +93,7 @@
   }
   
   .kids-section {
-      background-image: url("../../assets/Images/kidsection.png");
+      background-image: url("../../assets/images/kidsection.png");
       background-repeat: no-repeat;
       background-size: cover;
       box-sizing: border-box;
@@ -102,7 +102,7 @@
     }
     
     .trends-section {
-      background-image: url("../../assets/Images/bestrends.png");
+      background-image: url("../../assets/images/bestrends.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 300px;
