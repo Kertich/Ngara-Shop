@@ -1,0 +1,38 @@
+main{
+    padding-top: 5em;
+    padding-left: 10em;
+    padding-right: 10em;   
+    padding-bottom: 10em; 
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(190, 243, 243);
+    gap: 20px;
+ }
+ .cart-section{
+   background-color:white;
+   width: 80vw;
+   padding: 30px;
+  }
+
+ .image-details{
+   display: flex;
+   gap: 20px;
+   width: 70vw;
+ }
+ 
+ .product-image img{
+ width: 300px;
+ height: 300px;
+  }
+
+.total-cart{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-to-cart button{    
+    background-color: goldenrod;
+    border: none;
+    padding: 10px;
+}
+ 
