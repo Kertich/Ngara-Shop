@@ -1,0 +1,21 @@
+main{
+   padding-top: 5em;
+   padding-left: 15em;
+   padding-right: 15em;   
+}
+
+.image-details{
+  display: flex;
+  gap: 20px;
+}
+
+.product-image img{
+width: 150px;
+height: 150px;
+ }
+
+.cart-product-details{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+ }
