@@ -1,4 +1,10 @@
 /* Center the form on the page */
+
+
+main{
+padding: 8em;
+ }
+ 
 form {
     margin: auto;
     width: 50%;
@@ -40,5 +46,10 @@ form {
   div {
     color: red;
     margin-bottom: 10px;
+  }
+
+   p .sign-up-link:hover{
+   color: rgb(67, 67, 228);
+   cursor: pointer;
   }
   

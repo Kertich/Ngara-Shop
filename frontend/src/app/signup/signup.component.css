@@ -1,3 +1,9 @@
+
+main{
+  padding: 8em;
+}
+   
+
 form {
     display: flex;
     flex-direction: column;
@@ -19,6 +25,7 @@ form {
     border: 1px solid #ccc;
     font-size: 16px;
     margin-bottom: 20px;
+    width: 96%;
   }
   
   button[type="submit"] {
