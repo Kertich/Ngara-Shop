@@ -1,1 +1,44 @@
-<p>navbar works!</p>
+<div class="navbar">
+    <div class="nav-logo" routerLink="home">
+       <img src="../../assets/images/ngaralogo.png" alt="">
+    </div>
+
+    <div class="links">
+
+        <div class="dropdown">
+            <button>Shop</button>
+            <div class="dropdown-content">
+                <a routerLink="home#men">Men</a>
+                <a>Women</a>
+                <a>Kids</a>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="search" name="" id="" placeholder="Find your outfit">
+        </div>
+
+
+    </div>
+
+    <div class="account-cart">
+
+        <div class="auth-button">        
+            <div class="dropdown">
+                <button class="user-button"> <i class="fa-solid fa-user"></i>&nbsp;Account</button>
+                <div class="dropdown-content">
+                    <br>
+                   <button class="sign-in-button" routerLink="login" >Sign In</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-button">
+
+            <i class="fa-solid fa-cart-shopping" routerLink="cart"></i> 
+            <span class="cart-cirlce">1</span>
+            
+        </div>
+
+    </div>
+</div>
