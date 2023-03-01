@@ -48,6 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
+    AppRoutingModule
+
   
     
   ],
