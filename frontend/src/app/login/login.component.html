@@ -10,10 +10,9 @@
       Password:
       <input type="password" formControlName="password">
     </label>
-  
-    <button type="submit" [disabled]="loginForm.invalid">Log in</button>
+    <!-- [disabled]="loginForm.invalid" -->
+    <button type="submit" routerLink="home" >Log in</button>
     <p>No Account? <span routerLink="signup" class="sign-up-link">Create One</span></p> 
-
 
   
     <div *ngIf="loginForm?.get('email')?.invalid && loginForm?.get('email')?.touched">
