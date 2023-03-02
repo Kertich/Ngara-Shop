@@ -5,7 +5,11 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactComponent } from './contact/contact.component';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 
 const routes: Routes = [
@@ -15,7 +19,12 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'admin', component: AdminpageComponent },
   { path: 'cart', component: CartComponent },
+
+  {path: 'about', component: AboutUsComponent},
+  {path : 'contact', component: ContactComponent}
+
   { path: '**', component:PageNotFoundComponent},
+
 ];
 
 
