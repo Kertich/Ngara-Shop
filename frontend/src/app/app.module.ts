@@ -53,11 +53,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule,
+    MatListModule
     HttpClientModule
-  
-    
-  ],
+     ],
   providers: [],
   bootstrap: [AppComponent]
 })
