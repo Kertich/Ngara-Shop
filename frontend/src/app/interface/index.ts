@@ -16,7 +16,19 @@ export interface UserInterface {
      token?: string;
 }
 
+export interface Login {
+     email: string;     
+     password: string;
+     JWT: string;
+}
+
 export interface AuthUser{
      email:string
      password:string
+}
+
+export interface LoginUser{
+     email:string;
+     role:string;
+     token:string
 }

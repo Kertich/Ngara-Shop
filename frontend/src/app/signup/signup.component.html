@@ -1,23 +1,60 @@
 <main>
 
-  <form (submit)="onSubmit()">
-    <label>
-      Email <br>
-      <input type="email" name="email" [(ngModel)]="email" required>
-    </label>
-    <label>
-<!-- 
-      <label>
-        Email <br>
-        <input type="password" name="email" [(ngModel)]="email" required>
-      </label>
-      <label> -->
+<header align="center">
+  <h2>Welcome to Nga'ra Shop</h2>
+</header>
+<div class="form-image">
+  <div class="image">
+    <img
+      src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmclMjBzdG9yZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+      alt="">
+  </div>
 
-        Password <br>
-        <input type="password" name="password" [(ngModel)]="password" required>
-      </label>
-      <button type="submit">Sign up</button>
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+
+
+   
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" class="inputs" required email formControlName="email">
+        <!-- <span *ngIf="!email.valid && email.touched" class="error">Please Enter A Valid Email</span> -->
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <!-- <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number" class="inputs" ngModel
+                  required #phone="ngModel" pattern="[0-9]*"> -->
+        <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number" class="inputs"
+          required  formControlName="phone">
+
+        <!-- <span *ngIf="!phone.valid && phone.touched" class="error">Enter A VALID Phone Number</span> -->
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" formControlName="password" required
+           class="inputs"/>
+          
+        <!-- <span class="error" *ngIf="!form.get('password')?.valid && form.get('password')?.touched">Please
+          Enter a Valid Password</span> -->
+      </div> <br>
+
+
+
+    <div class="form-group">
+
+      <button type="submit" [ngClass]="{invalid:!form.valid,valid:form.valid}" >Sign Up</button>  
+
+
+      <span *ngIf="!form.valid && form.touched" class="error">Enter All details</span>
+    </div>
+
+    <h3>Already Have An Account? <span routerLink="/login" class="sign-in-link">Sign In</span></h3> 
+
 
   </form>
+
+
+</div>
 
 </main>

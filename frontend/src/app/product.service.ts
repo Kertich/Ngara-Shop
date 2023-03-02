@@ -10,10 +10,11 @@ export class ProductService {
 
 outfits:Outfit[]=[]
 
-  constructor(private http:HttpClient) { }
+constructor(private http:HttpClient) { }
 
 getOutfit():Observable<Outfit[]>{
 
   return this.http.get<Outfit[]>('http://localhost:4000/api/products')
 }
+
 }

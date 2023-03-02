@@ -1,33 +1,18 @@
-/* set the height of the sidenav container to fill the viewport */
-mat-sidenav-container {
-    height: 100vh;
+main{
+  padding: 30px;
+  text-align: center;
+}
+
+.nav-link p{
+font-weight: 900;
+font-size: large;
+}
+
+.nav-link p:hover{
+  color: blueviolet;
   }
-  
-  /* set the width of the sidenav and the padding of the sidenav content */
-  mat-sidenav {
-    width: 200px;
-  }
-  
-  mat-sidenav-content {
-    padding: 16px;
-  }
-  
-  /* style the active router link */
-  .mat-list-item.active {
-    background-color: #ccc;
-  }
-  
-  /* style the sidenav and list items */
-  mat-sidenav {
-    background-color: #f2f2f2;
-  }
-  
-  mat-nav-list a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  mat-nav-list a:hover {
-    background-color: #ddd;
-  }
-  
+
+.admin-nav{
+ display: flex;
+ justify-content: space-around;
+}

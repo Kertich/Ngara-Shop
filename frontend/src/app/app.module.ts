@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     SignupComponent,
     PageNotFoundComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

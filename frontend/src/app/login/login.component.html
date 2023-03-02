@@ -1,29 +1,60 @@
 <main>
 
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <label>
-      Email:
-      <input type="email" formControlName="email">
-    </label>
-  
-    <label>
-      Password:
-      <input type="password" formControlName="password">
-    </label>
-  
-    <button type="submit" [disabled]="loginForm.invalid">Log in</button>
-    <p>No Account? <span routerLink="signup" class="sign-up-link">Create One</span></p> 
-
-
-  
-    <div *ngIf="loginForm?.get('email')?.invalid && loginForm?.get('email')?.touched">
-      Email is required and must be a valid email address.
+  <header align="center">
+    <h2>Welcome to Nga'ra Shop</h2>
+  </header>
+  <div class="form-image">
+    <div class="image">
+      <img
+        src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmclMjBzdG9yZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+        alt="">
     </div>
   
-    <div *ngIf="loginForm?.get('password')?.invalid && loginForm?.get('password')?.touched">
-      Password is required and must be at least 6 characters long.
-    </div>
-  </form>
-
-</main>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
   
+  
+     
+          <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" class="inputs" required email formControlName="email">
+          <!-- <span *ngIf="!email.valid && email.touched" class="error">Please Enter A Valid Email</span> -->
+        </div>
+  
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <!-- <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number" class="inputs" ngModel
+                    required #phone="ngModel" pattern="[0-9]*"> -->
+          <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number" class="inputs"
+            required  formControlName="phone">
+  
+          <!-- <span *ngIf="!phone.valid && phone.touched" class="error">Enter A VALID Phone Number</span> -->
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" formControlName="password" required
+             class="inputs"/>
+            
+          <!-- <span class="error" *ngIf="!form.get('password')?.valid && form.get('password')?.touched">Please
+            Enter a Valid Password</span> -->
+        </div> <br>
+  
+  
+  
+      <div class="form-group">
+  
+        <button type="submit" [ngClass]="{invalid:!loginForm.valid,valid:loginForm.valid}" >Sign Up</button>  
+  
+  
+        <span *ngIf="!loginForm.valid && loginForm.touched" class="error">Enter All details</span>
+      </div>
+  
+      <h3>Already Have An Account? <span routerLink="/login" class="sign-in-link">Sign In</span></h3> 
+  
+  
+    </form>
+  
+  
+  </div>
+  
+  </main>
