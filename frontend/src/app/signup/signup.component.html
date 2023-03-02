@@ -1,16 +1,23 @@
 <main>
 
-<form (submit)="onSubmit()">
+  <form (submit)="onSubmit()">
     <label>
       Email <br>
       <input type="email" name="email" [(ngModel)]="email" required>
     </label>
     <label>
-      Password <br>
-      <input type="password" name="password" [(ngModel)]="password" required>
-    </label>
-    <button type="submit">Sign up</button>
+<!-- 
+      <label>
+        Email <br>
+        <input type="password" name="email" [(ngModel)]="email" required>
+      </label>
+      <label> -->
+
+        Password <br>
+        <input type="password" name="password" [(ngModel)]="password" required>
+      </label>
+      <button type="submit">Sign up</button>
+
   </form>
 
 </main>
-  

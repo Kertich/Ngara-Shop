@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { CartComponent } from './cart/cart.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'admin', component: AdminpageComponent },
   { path: 'cart', component: CartComponent },
+  { path: '**', component:PageNotFoundComponent},
 ];
 
 
