@@ -21,11 +21,13 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { UsersComponent } from './users/users.component';
+import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -43,12 +45,15 @@ import { UsersComponent } from './users/users.component';
     ProfileComponent,
     LoginComponent,
     SignupComponent,
+    AboutUsComponent,
+    ContactComponent,
     PageNotFoundComponent,
     ContactUsComponent,
     AboutUsComponent,
     AddProductComponent,
     UsersComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -57,11 +62,8 @@ import { UsersComponent } from './users/users.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule,
-    HttpClientModule
-  
-    
-  ],
+    MatListModule
+     ],
   providers: [],
   bootstrap: [AppComponent]
 })

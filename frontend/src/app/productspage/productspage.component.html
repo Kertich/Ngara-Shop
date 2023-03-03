@@ -14,7 +14,7 @@
                 <tr *ngFor="let outfit of outfits">
                     <td> <img src="{{outfit.product_image_url}}" alt="" class="table-image"></td>
                     <td><h3>{{outfit.name}}</h3></td>
-                    <td> <p>{{ outfit.price |currency }} </p></td>
+                    <td> <p>{{ outfit.price| currency }} </p></td>
                     <td>{{outfit.description}}</td>
                     <td> <button>Update</button> <button>Delete</button></td>
                 </tr>

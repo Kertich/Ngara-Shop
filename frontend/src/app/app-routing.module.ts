@@ -5,11 +5,15 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactComponent } from './contact/contact.component';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthGuardService } from './auth-guard.service';
 import { SingleproductComponent } from './singleproduct/singleproduct.component';
 import { ProductspageComponent } from './productspage/productspage.component';
 import { UsersComponent } from './users/users.component';
+
 
 
 const routes: Routes = [
@@ -25,6 +29,7 @@ const routes: Routes = [
   ]},
   { path: 'cart', canActivate:[AuthGuardService], component: CartComponent },
   { path: '**', component:PageNotFoundComponent},
+
 ];
 
 
