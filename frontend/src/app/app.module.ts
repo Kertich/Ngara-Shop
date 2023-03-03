@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { AddProductComponent } from './add-product/add-product.component';
     PageNotFoundComponent,
     ContactUsComponent,
     AboutUsComponent,
-    AddProductComponent
+    AddProductComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

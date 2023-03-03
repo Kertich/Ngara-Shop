@@ -36,7 +36,9 @@ export class LoginComponent implements OnInit {
 
         localStorage.setItem(this.tokenKey, response.JWT)
         this.authService.setLoginTrue()
-        this.router.navigate(['/home'])
+        this.router.navigate([''])
+        console.log('Login Successful');
+        
         
       },
       (error) => { 

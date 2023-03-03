@@ -10,6 +10,26 @@
       "section-1  section-1 section-2 section-2"
       "section-1  section-1 section-3 section-3";
   }
+
+  .table-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  table{
+    width: 100%;
+   
+  }
+
+  table th tr{
+    width: 50px;
+    height: 50px;
+  }
+
+  .products-table{
+   padding: 20px;
+   text-align: left;
+  }
   .section-1 {
     grid-area: section-1;
     background-image: url("../../assets/images/bigImage.png");
@@ -250,6 +270,11 @@
   
       
     }
+    .section-5 img {
+      width: 50vw;
+      height: 25vh;
+    }
+
     .section-5 img {
       width: 50vw;
       height: 25vh;

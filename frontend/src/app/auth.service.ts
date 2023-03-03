@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
-import { Login } from './interface';
+import { Login, LoginUser } from './interface';
 
 @Injectable({
   providedIn: 'root'
@@ -21,8 +21,11 @@ export class AuthService {
    }
 
   public loginUser(userlogin:Login):Observable<Login> {
-    return this.http.post<Login>('',userlogin)
+    return this.http.post<Login>('http://localhost:4000/api/users/login',userlogin)
   }
+  // login(user:LoginUser): Observable<LoginUser> {
+  //   return this.http.post<LoginUser>('http://localhost:4000/api/users/login', user);
+  // }
 
 
   getauthStatus(): Promise<boolean> {

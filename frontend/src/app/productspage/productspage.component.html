@@ -1,43 +1,23 @@
-
 <main>
+        <div class="products-table">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>                    
+                    <th>Product Price</th>
+                    <th>Product Description</th>
+                    <th>Actions</th>
+                </tr>
 
-    
 
-    <div class="main-men-section" id="men">
 
-        <div class="section-4" align="center">
-            <h1>Ng'ara Products</h1>
-            <p>Shop with ease online is 24/7</p>
+                <tr *ngFor="let outfit of outfits">
+                    <td> <img src="{{outfit.product_image_url}}" alt="" class="table-image"></td>
+                    <td><h3>{{outfit.name}}</h3></td>
+                    <td> <p>{{ outfit.price |currency }} </p></td>
+                    <td>{{outfit.description}}</td>
+                    <td> <button>Update</button> <button>Delete</button></td>
+                </tr>
+            </table>
         </div>
-
-        <div class="section-5">
-
-            <div class="card1-men-section" *ngFor="let outfit of outfits">
-                <img src="{{outfit.product_image_url}}" alt="">
-
-                <div class="product-details">
-
-                    <div class="product-name-price">
-                       <h3>{{outfit.name}}</h3>
-                       <p>{{ outfit.price |currency }} </p>
-                    </div>
-
-                    <div class="product-rating-cart">
-                        <h4 class="ratings">
-                            <i class="fa-solid fa-star ratings-icon"></i>
-                            <i class="fa-solid fa-star ratings-icon"></i>
-                            <i class="fa-solid fa-star ratings-icon"></i>
-                            <i class="fa-solid fa-star ratings-icon"></i>
-                            <i class="fa-solid fa-star ratings-icon"></i>
-                        </h4>
-
-                        <div class="cart-button">
-                            <button>Add Cart</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>               
-        </div>
-    </div>    
 </main>
