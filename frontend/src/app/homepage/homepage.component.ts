@@ -24,14 +24,7 @@ export class HomepageComponent implements OnInit {
     
     
  })
-  }
-    
-    
-  viewBook(id:string){
-    
-    
-  }
-    
+  }  
     
     
   }

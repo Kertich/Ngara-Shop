@@ -9,20 +9,25 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthGuardService } from './auth-guard.service';
+import { SingleproductComponent } from './singleproduct/singleproduct.component';
+import { ProductspageComponent } from './productspage/productspage.component';
+import { UsersComponent } from './users/users.component';
 
 
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'home', component:HomepageComponent },
+  { path: '', component:HomepageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'admin', component: AdminpageComponent },
-  { path: 'cart', component: CartComponent },
-
-  {path: 'about', component: AboutUsComponent},
-  {path : 'contact', component: ContactComponent}
-
+ 
+  { path: 'single', canActivate:[AuthGuardService],component:SingleproductComponent },
+  { path: 'admin',component: AdminpageComponent , 
+  children:[
+    { path: '', component:ProductspageComponent },
+    { path: 'users', component:UsersComponent},
+  ]},
+  { path: 'cart', canActivate:[AuthGuardService], component: CartComponent },
   { path: '**', component:PageNotFoundComponent},
 
 ];

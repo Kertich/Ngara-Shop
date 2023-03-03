@@ -1,0 +1,18 @@
+<main>
+
+    <p align="center">Ng'ara Users</p>
+    <div class="products-table">
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr *ngFor="let user of user">
+                <td> <img src="{{user.email}}" alt="" class="table-image"></td>
+                <td>
+                    <h3>{{user.phone}}</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+</main>

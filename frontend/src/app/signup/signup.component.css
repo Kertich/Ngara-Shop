@@ -1,45 +1,101 @@
-
-main{
-  padding: 8em;
+main{ 
+  padding: 30px;   
+  padding-bottom: 50px;
 }
-   
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.form-image{ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   }
   
-  label {
-    display: block;
-    margin-bottom: 10px;
+  .image img{ 
+     width: 324px; 
+     height: 315px;   
+  }
+  .image{ 
+      padding: 10px;   
+   }
+  
+  form{ 
+      padding: 5px;
+  
+   }
+  .form-group{ 
+      display: flex;
+      flex-direction: column; 
+      font-size: larger;
+   }
+  
+   .form-group label{ 
+     color: blueviolet;
+     margin-top: 2px;
+   }
+  
+   .form-group .inputs{ 
+      width: 400px;
+      height: 40px;
+    }
+  
+  .form-group button{ 
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: 800;
+  padding: 10px;
   }
   
-  input {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    margin-bottom: 20px;
-    width: 96%;
+  .error{ 
+     color: red;
+     font-weight: 900;
   }
   
-  button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 12px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+  input.ng-invalid.ng-touched{ 
+     border: 5px solid red ;   
   }
   
-  button[type="submit"]:hover {
-    background-color: #0069d9;
+  textarea.ng-invalid.ng-touched{ 
+      border: 5px solid blue ;   
+   }
+
+   .newControl{ 
+    display: flex;  
+    gap: 2px ;
+    margin-top: 2px;
   }
+
+  .newControl .close{ 
+    background-color: red;
+    color: white;   
+    padding:5px;
+   }
+
+   .sign-in-link:hover{ 
+     color: blueviolet;
+   }
+
+   .sign-in-link{ 
+    color: orangered;
+    cursor: progress;
+  }
+
+
+   
+ 
+  
+   
+  
+  /* .invalid{ 
+      background-color: grey;
+      border: 1px solid grey;
+      color: red; 
+   }
+   
+  
+   .valid{ 
+      background-color: green;
+      border:none;
+      color: white; 
+   }
+    */
   
